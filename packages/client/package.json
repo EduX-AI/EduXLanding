@@ -1,0 +1,32 @@
+{
+	"name": "@sd/client",
+	"private": true,
+	"main": "./src/index.ts",
+	"types": "./src/index.ts",
+	"scripts": {
+		"test": "jest",
+		"lint": "eslint src --cache",
+		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+		"typecheck": "tsc -b"
+	},
+	"dependencies": {
+		"@rspc/client": "=0.0.0-main-799eec5d",
+		"@rspc/react": "=0.0.0-main-799eec5d",
+		"@sd/config": "workspace:*",
+		"@tanstack/react-query": "^4.35",
+		"@zxcvbn-ts/core": "^2.1.0",
+		"@zxcvbn-ts/language-common": "^2.0.1",
+		"@zxcvbn-ts/language-en": "^2.1.0",
+		"plausible-tracker": "^0.3.8",
+		"react-hook-form": "^7.47.0",
+		"valtio": "^1.7.4",
+		"zod": "~3.22.4"
+	},
+	"devDependencies": {
+		"@types/react": "^18.2.28",
+		"typescript": "^5.2.2"
+	},
+	"peerDependencies": {
+		"react": "^18.2"
+	}
+}
